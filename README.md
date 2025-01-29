@@ -1,4 +1,3 @@
-# anderson.pereira
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,6 +34,11 @@
             font-size: 16px;
             margin: 10px 0;
         }
+        .skills {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
         .social {
             margin-top: 10px;
         }
@@ -51,9 +55,10 @@
         <img class="avatar" src="https://github.com/SEU-USUARIO.png" alt="Avatar">
         <div class="name">Seu Nome</div>
         <div class="bio">Desenvolvedor Web apaixonado por código aberto e tecnologia.</div>
+        <div class="skills">Especializado em React Native, Node.js, React, TypeScript e NestJS</div>
         <div class="social">
             <a href="https://github.com/SEU-USUARIO" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/SEU-PERFIL" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/anderson-pereira-61375a254/" target="_blank">LinkedIn</a>
         </div>
     </div>
 </body>
