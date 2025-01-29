@@ -19,25 +19,41 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .avatar {
             width: 150px;
             border-radius: 50%;
             border: 3px solid #58a6ff;
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
         }
         .name {
             font-size: 24px;
             font-weight: bold;
             margin-top: 10px;
+            animation: slideIn 1.5s ease-in-out;
         }
-        .bio {
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .bio, .skills {
             font-size: 16px;
             margin: 10px 0;
+            animation: fadeIn 2s ease-in-out;
         }
         .skills {
             font-size: 18px;
-            margin-top: 15px;
             font-weight: bold;
+            color: #58a6ff;
         }
         .social {
             margin-top: 10px;
@@ -47,6 +63,10 @@
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social a:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
